@@ -8,8 +8,9 @@ This homework takes a dictionary of data points collected hourly from a water so
 
 To run this program, first enter the following line into your terminal:
 
-.. code-block:: console
+```
    wget https://raw.githubusercontent.com/wjallen/turbidity/main/turbidity_data.json
+```
 
 This retrieves the most up-to-date data dictionary of the water samples and stores it in turbidity_data.json. The program relies upon this to run.
 
@@ -23,15 +24,17 @@ The second script, test_analyze_water.py, is simply a unit tester for analyze_wa
 
 To run the program, run the analyze_water.py script through the python interpreter:
 
-.. code-block:: console
+```
    python3 analyze_water.py
+```
 
 The program will return the calculated turbidity of the water, whether it's safe to use or not, and the number of hours to wait until the water is usable.
 Sample output:
 
-.. code-block:: console
+```
     Average Turbidity based on most recent five measurements = 1.1542 NTU
     WARNING:root:Turbidity is above threshold for safe use
     Minimum time required to return below a safe threshold = 7.10 hours
+```
 
 **NOTE:** If the water turbidity is below the safe threshold, the minimum time will simply be 0 hours.
