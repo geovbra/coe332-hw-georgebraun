@@ -48,7 +48,7 @@ If you want to run the container with your own data or other data, use this comm
 
 https://raw.githubusercontent.com/wjallen/coe332-sample-data/main/ML_Data_Sample.json
 
-This can be copied and pasted into a file or grabbed using 'wget https://raw.githubusercontent.com/wjallen/coe332-sample-data/main/ML_Data_Sample.json'
+This can be copied and pasted into a file or grabbed using `wget https://raw.githubusercontent.com/wjallen/coe332-sample-data/main/ML_Data_Sample.json`
 
 Sample output from sample data:
 
