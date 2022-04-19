@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geovbra-test-flask-deployment
+  labels:
+    username: geovbra
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      username: geovbra
+      env: test
+      app: geovbra-test-flask
+  template:
+    metadata:
+      labels:
+        username: geovbra
+        env: test
+        app: geovbra-test-flask
+    spec:
+      containers:
+        - name: redisflask
+          imagePullPolicy: Always
+          image: geovbra/redis_ml_data_analysis:1.0
+          env:
+          - name: FLASK_APP
+            value: "app.py"
+          command: ['sh', '-c', 'python app.py 10.104.28.244']
+          ports:
+          - name: http
+            containerPort: 5005

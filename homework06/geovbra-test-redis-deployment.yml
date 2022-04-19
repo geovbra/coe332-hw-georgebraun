@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geovbra-test-redis-deployment
+  labels:
+    username: geovbra
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      username: geovbra
+      env: test
+      app: geovbra-test-redis
+  template:
+    metadata:
+      labels:
+        username: geovbra
+        env: test
+        app: geovbra-test-redis
+    spec:
+      containers:
+        - name: redis
+          image: redis:5.0.0
+          volumeMounts:
+          - name: geovbra-test-redis-volume
+            mountPath: "/data"
+      volumes:
+      - name: geovbra-test-redis-volume
+        persistentVolumeClaim:
+          claimName: geovbra-test-redis-pvc
