@@ -29,7 +29,8 @@ To run the program, run the analyze_water.py script through the python interpret
 ```
 
 The program will return the calculated turbidity of the water, whether it's safe to use or not, and the number of hours to wait until the water is usable.
-Sample output:
+
+## Sample Output
 
 ```
     Average Turbidity based on most recent five measurements = 1.1542 NTU
