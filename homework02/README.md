@@ -15,11 +15,11 @@ To run this project, first run the file `generate_sites.py`, which randomly gene
 ## Sample Output
 
 ```
-leg = 1, time to travel = 8.51 hr, time to sample = 3 hr
-leg = 2, time to travel = 6.55 hr, time to sample = 3 hr
-leg = 3, time to travel = 5.88 hr, time to sample = 3 hr
-leg = 4, time to travel = 5.42 hr, time to sample = 3 hr
-leg = 5, time to travel = 4.29 hr, time to sample = 3 hr
+leg = 1, time to travel = 8.48 hr, time to sample = 3 hr
+leg = 2, time to travel = 2.40 hr, time to sample = 2 hr
+leg = 3, time to travel = 6.89 hr, time to sample = 3 hr
+leg = 4, time to travel = 7.62 hr, time to sample = 1 hr
+leg = 5, time to travel = 5.55 hr, time to sample = 1 hr
 ============================================================
-number of legs = 5, total time elapsed = 7.29 hr
+number of legs = 5, total time elapsed = 6.55 hr
 ```
