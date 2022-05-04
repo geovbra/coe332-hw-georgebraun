@@ -1,4 +1,12 @@
-Homework 1 consists of two python scripts.
+# Python Practice Scripts
+
+## Overview
+
+This folder consists of two scripts that test basic aspects of programming in Python.
+
+## Script Description
+
+This project consists of two python scripts.
 
 prime_ints.py tests the use of integer and boolean variables as well as for loops and if statements. The program prints out all prime integers between the numbers 3 and 100 inclusive.
 
